@@ -20,7 +20,6 @@ jobs:
 
       - name: build
         run: |
-          flutter doctor -v
           flutter clean && flutter pub get
           flutter build apk -t lib/main.dart --release --no-tree-shake-icons
 
